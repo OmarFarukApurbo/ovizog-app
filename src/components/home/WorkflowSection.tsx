@@ -61,7 +61,7 @@ export default function WorkflowSection() {
         {/* Desktop: Horizontal steps with connecting line */}
         <div className="relative">
           {/* Connecting line */}
-          <div className="hidden md:block absolute top-12 left-[calc(12.5%+28px)] right-[calc(12.5%+28px)] h-0.5 bg-neutral-200 z-0">
+          <div className="hidden md:block absolute top-7 left-[calc(12.5%+28px)] right-[calc(12.5%+28px)] h-0.5 bg-neutral-200 z-0">
             <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}

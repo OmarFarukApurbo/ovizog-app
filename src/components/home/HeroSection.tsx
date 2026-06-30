@@ -37,7 +37,7 @@ export default function HeroSection() {
             className="self-start inline-flex items-center gap-2 bg-[#0F4C3A]/10 border border-[#0F4C3A]/25 text-[#0F4C3A] text-sm font-semibold px-4 py-2 rounded-full mb-6"
           >
             <div className="w-2 h-2 bg-[#0F4C3A] rounded-full animate-pulse" />
-            নাগরিক সুরক্ষা প্ল্যাটফর্ম • RBIC সহযোগী
+            নাগরিক সুরক্ষা প্ল্যাটফর্ম
           </motion.div>
 
           {/* Headline */}
@@ -116,8 +116,8 @@ export default function HeroSection() {
           >
             {[
               { label: "১০,০০০+", sub: "অভিযোগ দায়ের" },
-              { label: "৬৪", sub: "জেলা কভার" },
-              { label: "৯৮%", sub: "পরিচয় সুরক্ষিত" },
+              { label: "৬৪", sub: "জেলা কভারেজ" },
+              { label: "১০০%", sub: "পরিচয় গোপনীয়" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl font-extrabold text-[#0F4C3A]">
