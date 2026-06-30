@@ -10,13 +10,13 @@ export default function HeroSection() {
       
       {/* ── Background Image on Right Side ── */}
       <div
-        className="absolute inset-0 lg:left-auto lg:right-0 lg:w-[70%] bg-cover bg-[center_right] bg-no-repeat z-0"
+        className="absolute inset-0 bg-cover bg-[center_right] bg-no-repeat z-0"
         style={{ backgroundImage: "url('/hero_bg.png')" }}
       />
 
       {/* ── Gradient Overlay ── */}
       {/* Fades from solid background color on the left to transparent on the right */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#F8F9FA] via-[#F8F9FA]/90 to-[#F8F9FA]/20 lg:to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#F8F9FA] via-[#F8F9FA]/95 lg:via-[#F8F9FA]/80 to-[#F8F9FA]/20 lg:to-transparent z-10 pointer-events-none" />
 
       {/* ── Background decoration grid ── */}
       <div
