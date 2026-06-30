@@ -1,0 +1,138 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Mic, ArrowRight, Lock } from "lucide-react";
+
+export default function HeroSection() {
+  return (
+    <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex items-center bg-[#F8F9FA]">
+      {/* ── Background image positioned on the right half on desktop, full cover on mobile ── */}
+      <div
+        className="absolute right-0 top-0 bottom-0 w-full lg:w-1/2 bg-cover bg-center lg:bg-contain lg:bg-right bg-no-repeat z-0"
+        style={{ backgroundImage: "url('/hero_bg.png')" }}
+      />
+
+      {/* ── Gradient Overlay for Desktop (keeps left-side text completely readable) ── */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#F8F9FA] via-[#F8F9FA]/90 to-transparent lg:w-3/4 z-10 pointer-events-none" />
+
+      {/* ── Overlay for Mobile/Tablet (semi-transparent overlay for text readability when stacked) ── */}
+      <div className="absolute inset-0 bg-[#F8F9FA]/85 lg:hidden z-10 pointer-events-none" />
+
+      {/* ── Decorative dot grid (very subtle) ── */}
+      <div
+        className="absolute inset-0 opacity-[0.025] pointer-events-none z-10"
+        style={{
+          backgroundImage: `radial-gradient(circle, #0F4C3A 1px, transparent 1px)`,
+          backgroundSize: "32px 32px",
+        }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full z-20">
+        <div className="max-w-2xl">
+          {/* ── Badge ── */}
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 bg-[#0F4C3A]/10 border border-[#0F4C3A]/25 text-[#0F4C3A] text-sm font-semibold px-4 py-2 rounded-full mb-7"
+          >
+            <div className="w-2 h-2 bg-[#0F4C3A] rounded-full animate-pulse" />
+            নাগরিক সুরক্ষা প্ল্যাটফর্ম • RBIC সহযোগী
+          </motion.div>
+
+          {/* ── Headline ── */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-4xl sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.25] mb-5 drop-shadow-sm"
+          >
+            {/* Line 1 — green */}
+            <span className="block text-[#0F4C3A]">
+              আপনার অধিকার সুরক্ষিত করুন,
+            </span>
+            {/* Line 2 — green */}
+            <span className="block text-[#0F4C3A]">
+              অন্যায়ের বিরুদ্ধে
+            </span>
+            {/* Line 3 — red */}
+            <span className="block text-[#D32F2F]">
+              গর্জে উঠুন!
+            </span>
+          </motion.h1>
+
+          {/* ── Subheadline ── */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-neutral-700 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed"
+          >
+            <span className="font-semibold text-[#0F4C3A]">Ovizog.com</span> – The
+            Digital Citizen Complaint and Legal Support Platform for Bangladesh.
+          </motion.p>
+
+          {/* ── CTA Buttons ── */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 mb-6"
+          >
+            <Link
+              href="/submit"
+              id="hero-cta-btn"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#D32F2F] text-white font-bold text-lg rounded-xl hover:bg-[#b71c1c] active:bg-[#991b1b] transition-all duration-200 shadow-xl hover:shadow-2xl hover:-translate-y-1 group"
+            >
+              <Mic className="w-5 h-5" />
+              অভিযোগ দায়ের করুন
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <Link
+              href="/track"
+              className="inline-flex items-center justify-center gap-2 px-6 py-4 text-[#0F4C3A] border-2 border-[#0F4C3A] font-semibold rounded-xl hover:bg-[#0F4C3A] hover:text-white transition-all duration-200 bg-white/60 backdrop-blur-sm"
+            >
+              অভিযোগ ট্র্যাক করুন
+            </Link>
+          </motion.div>
+
+          {/* ── Anonymous safety note ── */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex items-center gap-2 text-neutral-600 text-sm mb-10"
+          >
+            <Lock className="w-4 h-4 text-[#0F4C3A] flex-shrink-0" />
+            <span>
+              <span className="font-semibold text-[#0F4C3A]">বেনামে (নাম প্রকাশ না করে)</span>{" "}
+              অভিযোগ করুন — আপনার পরিচয় সম্পূর্ণ সুরক্ষিত।
+            </span>
+          </motion.div>
+
+          {/* ── Trust stats ── */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="flex flex-wrap items-center gap-6 pt-6 border-t border-[#0F4C3A]/20"
+          >
+            {[
+              { label: "১০,০০০+", sub: "অভিযোগ দায়ের" },
+              { label: "৬৪", sub: "জেলা কভার" },
+              { label: "৯৮%", sub: "পরিচয় সুরক্ষিত" },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-2xl font-extrabold text-[#0F4C3A] drop-shadow-sm">
+                  {stat.label}
+                </div>
+                <div className="text-xs text-neutral-600">{stat.sub}</div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
