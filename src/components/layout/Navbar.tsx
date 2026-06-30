@@ -9,7 +9,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { href: "/", label: "প্রধান পাতা" },
   { href: "/submit", label: "অভিযোগ জমা দিন" },
-  { href: "/legal", label: "আইনের নিয়মাবলী" },
+  { href: "/security", label: "নিরাপত্তা ও পলিসি" },
+  { href: "/workflow", label: "কার্যপদ্ধতি" },
   { href: "/about", label: "আমাদের সম্পর্কে" },
   { href: "/contact", label: "যোগাযোগ" },
 ];
