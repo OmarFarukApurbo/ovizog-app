@@ -41,22 +41,22 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-3">
               <a
-                href="tel:+193515543329"
+                href="tel:+8800960000000"
                 className="flex items-center gap-3 text-white/80 hover:text-white transition-colors text-sm group"
               >
                 <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
                   <Phone className="w-4 h-4" />
                 </div>
-                +193 515 543 329
+                +880 096000-0000
               </a>
               <a
-                href="mailto:infock.contact@ovizog.com"
+                href="mailto:help@ovizog.com"
                 className="flex items-center gap-3 text-white/80 hover:text-white transition-colors text-sm group"
               >
                 <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
                   <Mail className="w-4 h-4" />
                 </div>
-                infock.contact@ovizog.com
+                help@ovizog.com
               </a>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Footer() {
                 aria-label={label}
                 className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-200 hover:scale-110"
               >
-                <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d={path}/></svg>
+                <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d={path} /></svg>
               </a>
             ))}
           </div>
