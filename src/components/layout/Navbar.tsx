@@ -154,9 +154,11 @@ export default function Navbar() {
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.06 }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <Link
                       href={link.href}
+                      onClick={() => setIsMobileOpen(false)}
                       className={`flex items-center px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 ${
                         pathname === link.href
                           ? "bg-white/20 text-white"
@@ -170,20 +172,26 @@ export default function Navbar() {
               </nav>
 
               <div className="px-5 flex flex-col gap-3 mt-4">
-                <Link
-                  href="/login"
-                  className="flex items-center justify-center gap-2 py-3 text-white border border-white/30 rounded-xl font-semibold hover:bg-white/10 transition-all"
-                >
-                  <LogIn className="w-4 h-4" />
-                  লগইন
-                </Link>
-                <Link
-                  href="/register"
-                  className="flex items-center justify-center gap-2 py-3 text-white bg-[#D32F2F] rounded-xl font-semibold hover:bg-[#b71c1c] transition-all shadow-md"
-                >
-                  <UserPlus className="w-4 h-4" />
-                  নিবন্ধন করুন
-                </Link>
+                <motion.div whileTap={{ scale: 0.95 }}>
+                  <Link
+                    href="/login"
+                    onClick={() => setIsMobileOpen(false)}
+                    className="flex items-center justify-center gap-2 py-3 text-white border border-white/30 rounded-xl font-semibold hover:bg-white/10 transition-all"
+                  >
+                    <LogIn className="w-4 h-4" />
+                    লগইন
+                  </Link>
+                </motion.div>
+                <motion.div whileTap={{ scale: 0.95 }}>
+                  <Link
+                    href="/register"
+                    onClick={() => setIsMobileOpen(false)}
+                    className="flex items-center justify-center gap-2 py-3 text-white bg-[#D32F2F] rounded-xl font-semibold hover:bg-[#b71c1c] transition-all shadow-md"
+                  >
+                    <UserPlus className="w-4 h-4" />
+                    নিবন্ধন করুন
+                  </Link>
+                </motion.div>
               </div>
             </motion.div>
           </>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Mic, ArrowRight, Lock } from "lucide-react";
 
 export default function HeroSection() {
@@ -9,14 +10,19 @@ export default function HeroSection() {
     <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex items-center bg-[#F8F9FA]">
 
       {/* ── Background Image on Right Side ── */}
-      <div
-        className="absolute inset-0 bg-cover bg-[center_right] bg-no-repeat z-0"
-        style={{ backgroundImage: "url('/hero_bg.png')" }}
-      />
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero_bg.png"
+          alt="Hero Background"
+          fill
+          priority
+          className="object-cover object-right-bottom md:object-[center_right]"
+        />
+      </div>
 
       {/* ── Gradient Overlay ── */}
       {/* Fades from solid background color on the left to transparent on the right */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#F8F9FA] via-[#F8F9FA]/95 lg:via-[#F8F9FA]/80 to-[#F8F9FA]/20 lg:to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#F8F9FA] via-[#F8F9FA]/90 md:via-[#F8F9FA]/95 lg:via-[#F8F9FA]/80 to-[#F8F9FA]/10 md:to-[#F8F9FA]/20 lg:to-transparent z-10 pointer-events-none" />
 
       {/* ── Background decoration grid ── */}
       <div
@@ -31,8 +37,8 @@ export default function HeroSection() {
         <div className="max-w-2xl">
           {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             className="self-start inline-flex items-center gap-2 bg-[#0F4C3A]/10 border border-[#0F4C3A]/25 text-[#0F4C3A] text-sm font-semibold px-4 py-2 rounded-full mb-6"
           >
@@ -42,16 +48,16 @@ export default function HeroSection() {
 
           {/* Headline */}
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-[3.2rem] font-bold leading-[1.25] mb-5"
           >
             <span className="block text-[#0F4C3A]">
-              আপনার অধিকার সুরক্ষিত
+              আপনার অধিকার সুরক্ষিত করুন,
             </span>
             <span className="block text-[#0F4C3A]">
-              করুন, অন্যায়ের বিরুদ্ধে
+              অন্যায়ের বিরুদ্ধে
             </span>
             <span className="block text-[#D32F2F]">
               গর্জে উঠুন!
@@ -60,8 +66,8 @@ export default function HeroSection() {
 
           {/* Subheadline */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-neutral-700 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed font-medium"
           >
@@ -71,8 +77,8 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 mb-6"
           >
