@@ -43,7 +43,7 @@ export default function AboutPage() {
               <Users className="w-6 h-6" /> RBIC অংশীদারিত্ব
             </h2>
             <p className="text-neutral-600 leading-relaxed">
-              আমরা Rupalish Bangladesh Investigation Cell (RBIC)-এর সাথে সরাসরি অংশীদারিত্বে কাজ করি। RBIC একটি পেশাদার তদন্ত সংস্থা যারা দুর্নীতি, সহিংসতা এবং নাগরিক অধিকার লঙ্ঘনের বিরুদ্ধে লড়াই করে।
+              আমরা Rupali Bangladesh Investigation Cell (RBIC)-এর সাথে সরাসরি অংশীদারিত্বে কাজ করি। RBIC একটি পেশাদার তদন্ত সংস্থা যারা দুর্নীতি, সহিংসতা এবং নাগরিক অধিকার লঙ্ঘনের বিরুদ্ধে লড়াই করে।
             </p>
           </div>
 

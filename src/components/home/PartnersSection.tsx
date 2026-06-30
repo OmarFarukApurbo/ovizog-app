@@ -52,7 +52,7 @@ export default function PartnersSection() {
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2">
                   <h3 className="text-xl sm:text-2xl font-bold">
-                    Rupalish Bangladesh Investigation Cell
+                    Rupali Bangladesh Investigation Cell
                   </h3>
                   <span className="bg-white/20 text-white/90 text-xs font-bold px-2.5 py-1 rounded-full">
                     RBIC
@@ -60,7 +60,7 @@ export default function PartnersSection() {
                 </div>
 
                 <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-5">
-                  Rupalish Bangladesh Investigation Cell (RBIC). বাংলাদেশের সকলের প্রতিটি সোজা অভিযোগ বা অন্যায়ের বিরুদ্ধে লড়াই করতে পারেন।
+                  Rupali Bangladesh Investigation Cell (RBIC). বাংলাদেশের সকলের প্রতিটি সোজা অভিযোগ বা অন্যায়ের বিরুদ্ধে লড়াই করতে পারেন।
                 </p>
 
                 {/* Features */}

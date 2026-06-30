@@ -2,7 +2,7 @@
 
 **The Digital Citizen Complaint & Legal Support Platform for Bangladesh**
 
-Built in collaboration with **Rupalish Bangladesh Investigation Cell (RBIC)**.
+Built in collaboration with **Rupali Bangladesh Investigation Cell (RBIC)**.
 
 ---
 

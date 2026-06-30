@@ -7,7 +7,7 @@ import { Mic, ArrowRight, Lock } from "lucide-react";
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex items-center bg-[#F8F9FA]">
-      
+
       {/* ── Background Image on Right Side ── */}
       <div
         className="absolute inset-0 bg-cover bg-[center_right] bg-no-repeat z-0"
@@ -48,10 +48,10 @@ export default function HeroSection() {
             className="text-4xl sm:text-5xl lg:text-[3.2rem] font-bold leading-[1.25] mb-5"
           >
             <span className="block text-[#0F4C3A]">
-              আপনার অধিকার সুরক্ষিত করুন,
+              আপনার অধিকার সুরক্ষিত
             </span>
             <span className="block text-[#0F4C3A]">
-              অন্যায়ের বিরুদ্ধে
+              করুন, অন্যায়ের বিরুদ্ধে
             </span>
             <span className="block text-[#D32F2F]">
               গর্জে উঠুন!

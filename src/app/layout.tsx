@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "citizen protection",
     "ভিকটিম সুরক্ষা",
   ],
-  authors: [{ name: "Rupalish Bangladesh Investigation Cell (RBIC)" }],
+  authors: [{ name: "Rupali Bangladesh Investigation Cell (RBIC)" }],
   openGraph: {
     title: "Ovizog.com | নাগরিক ও ভিকটিম সুরক্ষা প্ল্যাটফর্ম",
     description:
