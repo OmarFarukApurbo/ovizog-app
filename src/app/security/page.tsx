@@ -151,19 +151,6 @@ export default function SecurityPage() {
               </div>
             </div>
             
-            {/* Government Promises */}
-            <div className="mt-10 bg-[#0F4C3A] rounded-2xl p-8 text-white relative overflow-hidden shadow-lg">
-              <div className="absolute -right-10 -bottom-10 opacity-10">
-                <HeartHandshake className="w-48 h-48" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 relative z-10">সরকারের কাছে আমাদের প্রতিশ্রুতি ও প্রত্যাশা</h3>
-              <p className="text-white/90 leading-relaxed relative z-10 mb-4">
-                আমরা অত্যন্ত বিশ্বস্ততার সাথে প্রতিটি অভিযোগের সত্যতা যাচাই করব, ডেটার শতভাগ গোপনীয়তা রক্ষা করব এবং কোনো রাজনৈতিক বা ব্যক্তিগত এজেন্ডা ছাড়া কেবল দেশের সেবায় প্রশাসনকে অকাট্য প্রমাণ সরবরাহ করব।
-              </p>
-              <p className="text-white/90 leading-relaxed relative z-10 font-bold">
-                সরকারের কাছে প্রত্যাশা: মাঠপর্যায়ে পুলিশ প্রশাসন, উপজেলা প্রশাসন (UNO) এবং জেলা প্রশাসন (DC) যেন আমাদের প্রেরিত তদন্ত রিপোর্টগুলোকে সর্বোচ্চ গুরুত্ব দিয়ে দ্রুত আইনি ব্যবস্থা (FIR/Action) গ্রহণ করে।
-              </p>
-            </div>
             
           </div>
         </div>
