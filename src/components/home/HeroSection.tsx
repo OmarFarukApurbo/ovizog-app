@@ -7,14 +7,14 @@ import { Mic, ArrowRight, Lock } from "lucide-react";
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex items-center bg-[#F8F9FA]">
-      {/* ── Background image positioned on the right half on desktop, full cover on mobile ── */}
+      {/* ── Background image: fills the entire hero section, aligned to the right ── */}
       <div
-        className="absolute right-0 top-0 bottom-0 w-full lg:w-1/2 bg-cover bg-center lg:bg-contain lg:bg-right bg-no-repeat z-0"
+        className="absolute inset-0 bg-cover bg-right bg-no-repeat z-0"
         style={{ backgroundImage: "url('/hero_bg.png')" }}
       />
 
-      {/* ── Gradient Overlay for Desktop (keeps left-side text completely readable) ── */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#F8F9FA] via-[#F8F9FA]/90 to-transparent lg:w-3/4 z-10 pointer-events-none" />
+      {/* ── Gradient Overlay for Desktop (keeps left-side text completely readable and blends background) ── */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#F8F9FA] via-[#F8F9FA]/85 to-transparent z-10 pointer-events-none hidden lg:block" />
 
       {/* ── Overlay for Mobile/Tablet (semi-transparent overlay for text readability when stacked) ── */}
       <div className="absolute inset-0 bg-[#F8F9FA]/85 lg:hidden z-10 pointer-events-none" />
