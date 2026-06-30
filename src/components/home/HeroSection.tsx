@@ -10,7 +10,7 @@ export default function HeroSection() {
     <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex items-center bg-[#F8F9FA]">
 
       {/* ── Background Image on Right Side ── */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 opacity-20 md:opacity-100">
         <Image
           src="/hero_bg.png"
           alt="Hero Background"
